@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our content</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Name: <input type="text" id="name" name="name" placeholder="Enter your name" required/></label>
+                <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your email" required /></label>
+                <label for="number" id="number-label">Age: <input type="number" id="number" min="13" max="120" placeholder="Age" /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite dessert type</legend>
+                <label>
+                    <select id="dropdown">
+                        <option value="">(select one) </option>
+                        <option value="1">Cakes</option>
+                        <option value="2">Cupcakes</option>
+                        <option value="3">Cookies</option>
+                        <option value="4">Pies</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite flavors</legend>
+                <label for="vanilla"><input type="checkbox" name="flavor" id="vanilla" value="vanilla" />Vanilla</label>
+                <label for="chocolate"><input type="checkbox" name="flavor" id="chocolate" value="chocolate" />Chocolate</label>
+                <label for="strawberry"><input type="checkbox" name="flavor" id="strawberry" value="strawberry" />Strawberry</label>
+                <label for="lemon"><input type="checkbox" name="flavor" id="lemon" value="lemon" />Lemon</label>
+                <label for="pineapple"><input type="checkbox" name="flavor" id="pineapple" value="pineapple" />Pineapple</label>
+            </fieldset>
+            <fieldset>
+                <legend>Skill level</legend>
+                <label for="beginner"><input type="radio" id="beginner" name="skill-level" value="beginner" /> Beginner</label>
+                <label for="intermediate"><input type="radio" id="intermediate" name="skill-level" value="intermediate" /> Intermediate</label>
+                <label for="advance"><input type="radio" id="advance" name="skill-level" value="advance" /> Advance</label> 
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea placeholder="Enter any additional comments..." rows="5" cols="40"></textarea>
+            </fieldset>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </body>
+</html>

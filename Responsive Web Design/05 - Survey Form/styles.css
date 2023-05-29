@@ -1,0 +1,40 @@
+body {
+    width: 600px;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+
+h1, p {
+    text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px auto;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+textarea {
+    width: 95%;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
