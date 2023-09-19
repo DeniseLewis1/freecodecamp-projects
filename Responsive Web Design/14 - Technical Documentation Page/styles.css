@@ -1,0 +1,15 @@
+@media (min-width: 1200px) {
+    body {
+      display: flex;
+    }
+  
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+    }
+  
+    main {
+      width: 75%;
+    }
+  }
