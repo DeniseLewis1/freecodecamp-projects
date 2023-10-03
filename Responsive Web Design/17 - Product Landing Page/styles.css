@@ -1,0 +1,43 @@
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  
+  #header-img {
+    width: 40%;
+  }
+  
+  #nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  #nav-bar li {
+    margin: 0 10px;
+  }
+  
+  .container {
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 480px) {
+    #header {
+      flex-direction: column;
+    }
+  
+    #header-img {
+      width: 80%;
+    }
+    #nav-bar ul {
+      flex-direction: column;
+    }
+  
+    .container {
+    margin-top: 150px;
+    }
+  }
